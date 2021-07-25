@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* mixins, variables, etc */
+
+$gray-medium-light: #eaeaea;
+
 /* universal */
 
 body {
@@ -15,12 +19,14 @@ textarea {
     resize: vertical;
 }
 
+// h1 is nested into .center
 .center {
     text-align: center;
-}
 
-.center h1 {
+
+h1 {
     margin-bottom: 10px;
+}
 }
 
 /* typography */
@@ -41,7 +47,7 @@ h2 {
     letter-spacing:
     -1px; margin-bottom: 30px;
     text-align: center;
-    font-weight: normal; color: #777;
+    font-weight: normal; color: $gray-light;
 }
 p{
 font-size: 1.1em; line-height: 1.7em;
@@ -54,8 +60,24 @@ font-size: 1.1em; line-height: 1.7em;
     color: #fff; text-transform: uppercase; letter-spacing: -1px;
     padding-top: 9px;
     font-weight: bold; 
-}
 
-#logo:hover {
+// logo is & and is nested here.
+&:hover {
 color: #fff; text-decoration: none;
 }
+}
+
+footer {
+    margin-top: 45px;
+    padding-top: 5px;
+    border-top: 1px solid #eaeaea; color: $gray-light;
+    a{
+    color: #555; &:hover {
+    color: #222; }
+    }
+    small {
+    float: left; }
+    ul {
+    float: right; list-style: none; li {
+    float: left; margin-left: 15px; }
+    } }
