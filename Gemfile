@@ -6,7 +6,7 @@ ruby '3.0.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 
-gem 'rails-controller-testing'
+
 
 gem 'bootstrap-sass', '3.4.1'
 # Use Puma as the app server
@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -46,6 +46,8 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  
+
 end
 
 group :test do
@@ -54,6 +56,11 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'rails-controller-testing', '1.0.5'
+  gem 'minitest',                 '5.11.3'
+  gem 'minitest-reporters',       '1.3.8'
+  gem 'guard',                    '2.16.2'
+  gem 'guard-minitest',           '2.4.6'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
