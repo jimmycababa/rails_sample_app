@@ -1,0 +1,6 @@
+<% provide(:title, @user.name)%>
+<h1>
+<%# gravatar is a helper for users %>
+<%= gravatar_for @user %>
+<%= @user.name %>
+</h1>
