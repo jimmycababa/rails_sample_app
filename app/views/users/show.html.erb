@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% provide(:title, @user.name) %>
 <div class="row">
     <aside class="col-md-4">
@@ -9,3 +10,11 @@
         </section>
     </aside>
 </div>
+=======
+<% provide(:title, @user.name)%>
+<h1>
+<%# gravatar is a helper for users %>
+<%= gravatar_for @user %>
+<%= @user.name %>
+</h1>
+>>>>>>> main
