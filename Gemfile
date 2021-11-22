@@ -7,9 +7,6 @@ ruby '3.0.1'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 gem 'bootstrap-sass', '3.4.1'
 
-
-
-gem 'bootstrap-sass', '3.4.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -57,15 +54,11 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
-<<<<<<< HEAD
   gem 'rails-controller-testing', '1.0.5'
   gem 'minitest',                 '5.11.3'
   gem 'minitest-reporters',       '1.3.8'
   gem 'guard',                    '2.16.2'
   gem 'guard-minitest',           '2.4.6'
-=======
-  gem 'rails-controller-testing'
->>>>>>> rails-flavored-ruby
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
