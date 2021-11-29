@@ -19,10 +19,15 @@ end
 
 private
 
+<<<<<<< HEAD
 def user_params
 params.require(:user).permit(:name, :email, :password, :password_confirmation)
 end
   
   def new
+=======
+  def user_params
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+>>>>>>> sign-up
   end
 end
