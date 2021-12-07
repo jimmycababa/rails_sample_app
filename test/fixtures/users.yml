@@ -1,1 +1,7 @@
-# empty
+# create a user that has a known email and password (a hash)
+# we are creating this fixture so it passes the test in our login_test.rb
+# in order to use password_digest, we must set up a password_digest method in the users model
+jimmy:
+  name: Jimmy Example
+  email: jimmy@example.com
+  password_digest: <%= User.digest('password') %>
